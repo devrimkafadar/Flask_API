@@ -1,0 +1,16 @@
+.container-fluid{
+    margin: 5%;
+    max-width: 40%;
+    border: 5%;
+    border-radius: 1%;
+    border-color: black;
+    border-style: solid;
+}
+label{
+    font-weight: bold;
+}
+button{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}

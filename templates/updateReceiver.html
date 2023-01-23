@@ -1,0 +1,138 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5000">NFL DB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Interceptions
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/interceptions">Interception Stats</a></li>
+                      </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Players
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/players">Players Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Games
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/games">Games Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Receiver
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/receivers">Receiver Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Passer
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/passer">Passer Stats</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plays
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/plays">Stats About Plays</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </head>
+<body> 
+    <div class="container-fluid" id="recFormContainer" style="background-color: rgb(119, 117, 117); padding: 5%;
+    border: 1%;
+    border-color: black;
+    border-style: groove;
+    ">
+     <div style="text-align: center; margin: 2%;">
+        <h1 style="font-weight: bold;">UPDATE RECEIVER</h1>
+     </div>
+     
+        <form action ="" method="post">
+            <div class="mb-3">
+                <label class="form-label">Receiver Id</label>
+                <input type ="text" name="receiverId" class="form-control" id="receiverId" aria-describedby="receiverId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Play Id</label>
+                <input type ="text" name="playId" class="form-control" id="playId" aria-describedby="playId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Team Id</label>
+                <input type ="text" name="teamId" class="form-control" id="teamId" aria-describedby="teamId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Player Id</label>
+                <input type ="text" name="playerId" class="form-control" id="playerId" aria-describedby="playerId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Position</label>
+                <input type ="text" name="recPosition" class="form-control" id="recPosition" aria-describedby="recPosition">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Yards</label>
+                <input type ="text" name="recYards" class="form-control" id="recYards" aria-describedby="recYards">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec</label>
+                <input type ="text" name="rec" class="form-control" id="rec" aria-describedby="rec">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Yac</label>
+                <input type ="text" name="recYac" class="form-control" id="recYac" aria-describedby="recYac">
+            </div>            
+            <div class="mb-3">
+                <label class="form-label">Rec1Down</label>
+                <input type ="text" name="rec1Down" class="form-control" id="rec1Down" aria-describedby="rec1Down">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Fumble</label>
+                <input type ="text" name="recFumble" class="form-control" id="recFumble" aria-describedby="recFumble">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Pass Def</label>
+                <input type ="text" name="recPassDef" class="form-control" id="recPassDef" aria-describedby="recPassDef">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Rec Pass Int</label>
+                <input type ="text" name="recPassInt" class="form-control" id="recPassInt" aria-describedby="recPassInt">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">RecEn</label>
+                <input type ="text" name="recEn" class="form-control" id="recEn" aria-describedby="recEn">
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary">UPDATE</button>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

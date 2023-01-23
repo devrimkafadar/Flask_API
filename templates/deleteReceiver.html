@@ -1,0 +1,91 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="http://127.0.0.1:5000">NFL DB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Interceptions
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/interceptions">Interception Stats</a></li>
+                      </ul>
+                    </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Players
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/players">Players Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Games
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/games">Games Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Receiver
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/receivers">Receiver Information</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Passer
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/passer">Passer Stats</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Plays
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/plays">Stats About Plays</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </head>
+<body> 
+    <div class="container-fluid" id="recFormContainer" style="background-color: rgb(119, 117, 117); padding: 5%;
+    border: 1%;
+    border-color: black;
+    border-style: groove;
+    ">
+     <div style="text-align: center; margin: 2%;">
+        <h1 style="font-weight: bold;">DELETE RECEIVER</h1>
+     </div>
+     
+        <form action ="" method="post">
+            <div class="mb-3">
+                <label class="form-label">Receiver Id</label>
+                <input type ="text" name="receiverId" class="form-control" id="receiverId" aria-describedby="receiverId">
+            </div>
+            
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary">DELETE</button>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://127.0.0.1:5000">NFL DB</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Interceptions
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/interceptions">Interception Stats</a></li>
+                        </ul>
+                      </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Players
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/players">Players Information</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Games
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/games">Games Information</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Receiver
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/receivers">Receiver Information</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Passer
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/passer">Passer Stats</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Plays
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://127.0.0.1:5000/stats/plays">Stats About Plays</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </head>
+<body> 
+    <div class="container-fluid" id="recFormContainer" style="background-color: rgb(119, 117, 117); padding: 5%;
+    border: 1%;
+    border-color: black;
+    border-style: groove;
+    ">
+     <div style="text-align: center; margin: 2%;">
+        <h1 style="font-weight: bold;">UPDATE PLAYER</h1>
+     </div>
+     
+        <form action ="" method="post">
+            <div class="mb-3">
+                <label class="form-label">PlayId</label>
+                <input type ="text" name="playId" class="form-control" id="playId" aria-describedby="playId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">GameId</label>
+                <input type ="text" name="gameId" class="form-control" id="gameId" aria-describedby="gameId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Quarter</label>
+                <input type ="text" name="quarter" class="form-control" id="quarter" aria-describedby="quarter">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Possession TeamId</label>
+                <input type ="text" name="possessionTeamId" class="form-control" id="possessionTeamId" aria-describedby="possessionTeamId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Nonpossession TeamId</label>
+                <input type ="text" name="nonpossessionTeamId" class="form-control" id="nonpossessionTeamId" aria-describedby="nonpossessionTeamId">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Play Type</label>
+                <input type ="text" name="playType" class="form-control" id="playType" aria-describedby="playType">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Play Type2</label>
+                <input type ="text" name="playType2" class="form-control" id="playType2" aria-describedby="playType2">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Game Clock</label>
+                <input type ="text" name="gameClock" class="form-control" id="gameClock" aria-describedby="gameClock">
+            </div>            
+            <div class="mb-3">
+                <label class="form-label">Down</label>
+                <input type ="text" name="down" class="form-control" id="down" aria-describedby="down">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Distance</label>
+                <input type ="text" name="distance" class="form-control" id="distance" aria-describedby="distance">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Turnover</label>
+                <input type ="text" name="turnover" class="form-control" id="turnover" aria-describedby="turnover">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Safety</label>
+                <input type ="text" name="safety" class="form-control" id="safety" aria-describedby="safety">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Offensive Yards</label>
+                <input type ="text" name="offensiveYards" class="form-control" id="offensiveYards" aria-describedby="offensiveYards">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Net Yards</label>
+                <input type ="text" name="netYards" class="form-control" id="netYards" aria-describedby="netYards">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">First Down</label>
+                <input type ="text" name="firstDown" class="form-control" id="firstDown" aria-describedby="firstDown">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Score Possession</label>
+                <input type ="text" name="scorePossession" class="form-control" id="scorePossession" aria-describedby="scorePossession">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Score Nonpossession</label>
+                <input type ="text" name="scoreNonpossession" class="form-control" id="scoreNonpossession" aria-describedby="scoreNonpossession">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Home Score Pre</label>
+                <input type ="text" name="homeScorePre" class="form-control" id="homeScorePre" aria-describedby="homeScorePre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Visiting Score Pre</label>
+                <input type ="text" name="visitingScorePre" class="form-control" id="visitingScorePre" aria-describedby="visitingScorePre">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Home Score Post</label>
+                <input type ="text" name="homeScorePost" class="form-control" id="homeScorePost" aria-describedby="homeScorePost">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Visiting Score Post</label>
+                <input type ="text" name="visitingScorePost" class="form-control" id="visitingScorePost" aria-describedby="visitingScorePost">
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-primary">UPDATE</button>
+            </div>
+        </form> 
+    </div>
+</body>
+</html>
